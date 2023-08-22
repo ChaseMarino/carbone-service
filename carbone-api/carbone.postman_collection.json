@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "2021a991-f290-4518-a132-3b0b8ef837b1",
+		"name": "carbone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23721092"
+	},
+	"item": [
+		{
+			"name": "carbone template post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "template",
+							"type": "file",
+							"src": "template.odt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/template",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"template"
+					],
+					"query": [
+						{
+							"key": "files",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "carbone template delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "template",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/template",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"template"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "carbone report post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "template",
+							"value": "FullListing-rep.docx",
+							"type": "text"
+						},
+						{
+							"key": "data",
+							"type": "file",
+							"src": "Emps.json"
+						},
+						{
+							"key": "type",
+							"value": "odt",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/report",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "carbone template put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "template",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/template",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"template"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

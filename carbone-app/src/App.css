@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: top;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.form{
+  padding-bottom: 2%;
+}
+.buttons {
+  
+  display: flex;
+  justify-content: space-between;
+  margin-left: 31%;
+  margin-right: 31%;
+  padding: 10px 0;
+
+  
+  align-items: center;
+
+}
+
+.head{
+  padding-top: 1%;
+}
+
+button {
+  color: blue;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.input-div{
+  display: inline-block;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.table-block{
+  padding-top: 5%;
+  margin-bottom: 10%;
+}
+
+.styled-table {
+  margin-top: 1%;
+  align-self: center;
+  margin-right: auto;
+  margin-left: auto;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-tr:nth-of-type(even) {
+  background-color: #4e4444;
+}
+
+.styled-tr:last-of-type {
+  border-bottom: 2px solid #0077b6;
+}
+
+.styled-tr,
+th, td {
+  padding: 12px 15px;
+}
+
+
+.styled-tr {
+  background-color: #0077b6;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+
